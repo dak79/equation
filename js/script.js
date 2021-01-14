@@ -26,4 +26,13 @@ function seconEquat() {
     document.querySelector('#resultOne').innerHTML = resFour;
     document.querySelector('#resultTwo').innerHTML = resFour;
   }
+};
+
+function clearAll() {
+  document.querySelector('#aVal').value = '';
+  document.querySelector('#bVal').value = '';
+  document.querySelector('#cVal').value = '';
+  document.querySelector('#deltaValue').innerHTML = '';
+  document.querySelector('#resultOne').innerHTML = '';
+  document.querySelector('#resultTwo').innerHTML = '';
 }

@@ -10,35 +10,30 @@
     <title>Second Degree Equation</title>
   </head>
 
-  <body onload="equaTitle();">
+  <body>
     <header>
-      <h1>Second Degree Equation: ax&sup2; + bx + c</h1>
+      <h1>Second Degree Equation</h1>
     </header>
+
     <section id="dataInput">
-      <input id="aVal" type="text" placeholder="a" />
-      <label>x&sup2; + </label>
-      <input id="bVal" type="text" placeholder="b" />
-      <label>x + </label>
-      <input id="cVal" type="text" placeholder="c" />
-      <label> = 0</label>
-      <p></p>
-      <button type="button" onclick="seconEquat();">Compute It</button>
-      <p></p>
-    </section>
-    <section id="dataOutput">
       <div>
-        <h3>Delta: <span id="deltaValue"></span></h3>
+        <p>Change the values of a, b, c: </p>
+        <input id="aVal" type="text" placeholder="a" class="equField" />
+        <label>x&sup2; + </label>
+        <input id="bVal" type="text" placeholder="b" class="equField" />
+        <label>x + </label>
+        <input id="cVal" type="text" placeholder="c" class="equField" />
+        <label>&nbsp; =&nbsp; 0</label>
       </div>
-      <p></p>
-      <div>
-        <h3><span id="rOne">Result X1: </span><span id="resultOne"></span> </h3>
-      </div>
-      <p></p>
-      <div>
-        <h3><span id="rTwo">Result X2: </span><span id="resultTwo"></span></h3>
-      </div>
+      <button type="button" onclick="seconEquat();" class="buttOn">Compute It</button>
+      <button type="button" onclick="clearAll();" class="buttOn">Clear</button>
     </section>
 
+    <section id="dataOutput">
+      <h3 id="delta">Delta: <span id="deltaValue"></span></h3>
+      <h3>Result X1: <span id="resultOne"></span> </h3>
+      <h3>Result X2: <span id="resultTwo"></span></h3>
+    </section>
   </body>
 
 </html>

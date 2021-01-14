@@ -1,3 +1,98 @@
-/*
-Da fare lo stile -- vetro su sfondo nero?
-*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  color: black;
+  background-color: #063642;
+}
+
+header {
+  display: flex;
+  text-align: center;
+  align-content: center;
+  flex-flow: row wrap;
+  border-radius: 0.8em;
+  margin: 2em;
+  padding: 1em;
+  background-color: #d0d6d8;
+  box-shadow: 0.3em 0.3em 0.6em #d0d6d8;
+}
+
+h1 {
+  color: #063642;
+  flex: 1 1 100vw;
+}
+
+section {
+  border-radius: 0.8em;
+  margin: 2em;
+  background-color: #d0d6d8;
+  padding: 1em;
+  box-shadow: 0.3em 0.3em 0.6em #d0d6d8;
+  color: #063642;
+}
+
+#dataInput {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+div #dataInput {
+  flex: 1 1;
+}
+
+.equField {
+  max-width: 1.5em;
+  color: #063642;
+  background-color: inherit;
+  border: 0.1em solid #063642;
+  text-align: center;
+}
+
+input[type="text"].equField::placeholder {
+  color: #063642;
+  text-align: center;
+}
+
+/* Clickable Button */
+button {
+  border-radius: 0.8em;
+  margin: 2em;
+  background-color: #063642;
+  padding: 1em;
+  box-shadow: 0.3em 0.3em 1em #063642;
+  color: #d0d6d8;
+  border: none;
+  transition: box-shadow 0.5s ease, transform 0.5s ease;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  box-shadow: 0 0 0 #063642, inset 0.3em 0.3em 1em #063642;
+  transform: translate(0.6em, 0.6em);
+}
+
+#dataOutput {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  flex: 1 1;
+}
+
+#delta {
+  margin-bottom: 1em;
+}
