@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+    <title>Second Degree Equation</title>
+  </head>
+
+  <body onload="equaTitle();">
+    <header>
+      <h1>Second Degree Equation: ax&sup2; + bx + c</h1>
+    </header>
+    <section id="dataInput">
+      <input id="aVal" type="text" placeholder="a" />
+      <label>x&sup2; + </label>
+      <input id="bVal" type="text" placeholder="b" />
+      <label>x + </label>
+      <input id="cVal" type="text" placeholder="c" />
+      <label> = 0</label>
+      <p></p>
+      <button type="button" onclick="seconEquat();">Compute It</button>
+      <p></p>
+    </section>
+    <section id="dataOutput">
+      <div>
+        <h3>Delta: <span id="deltaValue"></span></h3>
+      </div>
+      <p></p>
+      <div>
+        <h3><span id="rOne">Result X1: </span><span id="resultOne"></span> </h3>
+      </div>
+      <p></p>
+      <div>
+        <h3><span id="rTwo">Result X2: </span><span id="resultTwo"></span></h3>
+      </div>
+    </section>
+
+  </body>
+
+</html>
